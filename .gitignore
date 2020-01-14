@@ -1,0 +1,5 @@
+.idea
+mlruns
+.ipynb_checkpoints
+.git
+.env

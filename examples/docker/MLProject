@@ -1,0 +1,12 @@
+name: mlflow-snt
+
+docker_env:
+  image: mlflow-snt-image
+  environment: ["MLFLOW_EXPERIMENT_NAME"]
+
+entry_points:
+  main:
+    parameters:
+      alpha: {type: float, default: 1.0}
+      l1_ratio: {type: float, default: 0.5}
+    command: "python main.py --alpha {alpha} --l1_ratio {l1_ratio}"
